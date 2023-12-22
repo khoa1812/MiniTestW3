@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-class Meat extends Material {
+public class Meat extends Material {
     private double weight;
 
     public Meat(String id, String name, LocalDate manufacturingDate, int cost, double weight) {

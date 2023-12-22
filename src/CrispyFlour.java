@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
-class CrispyFlour extends Material {
-    private int quantity;
+public class CrispyFlour extends Material {
+    public int quantity;
 
     public CrispyFlour(String id, String name, LocalDate manufacturingDate, int cost, int quantity) {
         super(id, name, manufacturingDate, cost);

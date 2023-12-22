@@ -4,8 +4,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class MaterialManager {
-    private List<Material> materials = new ArrayList<>();
+public class MaterialManager {
+    public List<Material> materials = new ArrayList<>();
 
     public void addMaterial(Material material) {
         materials.add(material);
@@ -57,7 +57,7 @@ class MaterialManager {
         }
     }
 
-    private Material applyDiscount(Material material, double discountRate) {
+    public Material applyDiscount(Material material, double discountRate) {
         int newCost = (int) (material.getCost() * (1 - discountRate));
         return new Material(material.getId(), material.getName(), material.getManufacturingDate(), newCost) {
             @Override

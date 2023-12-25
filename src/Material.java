@@ -6,6 +6,19 @@ public abstract class Material {
     public LocalDate manufacturingDate;
     public int cost;
 
+    public Material() {
+    }
+
+    @Override
+    public String toString() {
+        return "Material{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", manufacturingDate=" + manufacturingDate +
+                ", cost=" + cost +
+                '}';
+    }
+
     public Material(String id, String name, LocalDate manufacturingDate, int cost) {
         this.id = id;
         this.name = name;
